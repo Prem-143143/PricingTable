@@ -1,0 +1,50 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 30px;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Teko', sans-serif;
+}
+
+.main > *{
+    color: black; 
+    flex: 1;
+    background-color: rgb(209, 209, 210);
+    max-width: 400px;
+    max-height: 300px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    
+}
+
+img{
+    height: 12px;
+    width: 17px;
+}
+
+h3{
+    color:rgb(4, 68, 103);
+}
+input[type="button"]{
+    background-color: rgb(239, 148, 37);
+    width: 80px;
+    height: 40px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+@media(max-width: 680px){
+    .main{
+        flex-direction: column;
+    }
+
+    .main > *{
+        width: 400px;
+    }
+}
